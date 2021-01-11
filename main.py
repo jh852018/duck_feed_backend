@@ -5,7 +5,7 @@ import json
 app = Flask(__name__)
 cors = CORS(app)
 
-@app.route('/duck-feed-entry', methods=['POST', 'OPTIONS'])
+@app.route('/duck-feed-entry', methods=['POST'])
 @cross_origin()
 def entry():
     if request.method == 'POST':
